@@ -16,7 +16,7 @@ get_header();
         <section class="section">
             <div class="container is-max-widescreen py-4">
                 <div class="columns is-multiline is-centered">
-                    <div class="column is-offset-1-tablet is-offset-0-desktop is-10-tablet is-8-desktop">
+                    <div class="column is-offset-1-tablet is-offset-0-desktop is-10-tablet is-11-desktop">
 						<?php
 						while ( have_posts() ) :
 							the_post();
@@ -31,10 +31,10 @@ get_header();
 						endwhile; // End of the loop.
 						?>
                     </div>
-                    <div class="column is-offset-1-tablet is-offset-1-desktop is-10-tablet is-2-desktop">
-                        <?php knowledgecenter_single_side_menu(); ?>
-                        <?php get_sidebar(); ?>
-                    </div>
+                    <!-- <div class="column is-offset-1-tablet is-offset-1-desktop is-10-tablet is-2-desktop">
+                        <?php // knowledgecenter_single_side_menu(); ?>
+                        <?php // get_sidebar(); ?>
+                    </div> -->
                 </div>
             </div>
         </section>
