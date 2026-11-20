@@ -44,7 +44,7 @@ $footer_background = apply_filters( 'knowledgecenter_footer_background_color', '
 		<div class="level">
             <div class="level-left">
 				
-				<div class="level-item"><p class="subtitle is-6"><?php knowledgecenter_footer_copyrite_text(); ?></p></div>
+				<div class="level-item"><p><?php knowledgecenter_footer_copyrite_text(); ?></p></div>
             </div>
 
 	        <?php
