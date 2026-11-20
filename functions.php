@@ -66,3 +66,34 @@ if ( ! function_exists( 'knowledgecenter_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'knowledgecenter_setup' );
+
+register_sidebar(array(
+	'name' => __( 'Footer 1','mif-mr'),
+	'id' => 'footer-one',
+	'description' => __( 'Widgets in this area are used in the first footer column','wpex' ),
+	'before_widget' => '<div class="footer-widget %2$s">',
+	'after_widget' => '</div>',
+	// 'before_title' => '<h4 class="mb-5">',
+	'before_title' => '<h4>',
+	'after_title' => '</h4>',
+));
+//footer 2
+register_sidebar(array(
+	'name' => __( 'Footer 2','mif-mr'),
+	'id' => 'footer-two',
+	'description' => __( 'Widgets in this area are used in the second footer column','wpex' ),
+	'before_widget' => '<div class="footer-widget %2$s clearfix">',
+	'after_widget' => '</div>',
+	'before_title' => '<h4><span>',
+	'after_title' => '</span></h4>'
+));
+//footer 3
+register_sidebar(array(
+	'name' => __( 'Footer 3','mif-mr'),
+	'id' => 'footer-three',
+	'description' => __( 'Widgets in this area are used in the third footer column','wpex' ),
+	'before_widget' => '<div class="footer-widget %2$s clearfix">',
+	'after_widget' => '</div>',
+	'before_title' => '<h4><span>',
+	'after_title' => '</span></h4>',
+));
